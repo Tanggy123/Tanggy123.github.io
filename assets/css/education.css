@@ -1,0 +1,49 @@
+body {
+    overflow-y: auto; 
+    background-attachment: fixed;
+}
+
+body::after {
+    position: fixed;
+    content: "";
+    background: url("../image/background.jpeg");
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: -1;  
+    background-color: white; 
+}
+
+#edu-container {
+    position: relative;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+}
+
+.edu {
+    margin-bottom: 60px;
+}
+
+.edu-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+.edu-time {
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px;
+}
+
+.edu-content {
+    line-height: 32px;
+    font-size: 20px;
+}

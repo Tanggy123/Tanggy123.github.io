@@ -1,0 +1,38 @@
+body {
+    background-image: url("../image/background.jpeg"); 
+    background-size: cover;
+    overflow: hidden;
+}
+
+html, body, form, main {
+    height: 100%;
+}
+
+#topbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 20px;
+}
+
+.bar-item {
+    margin: 0px 40px 0px 40px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.bar-item:hover {
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
+.current {
+    border-bottom: 3px solid;
+    border-bottom-color: white;
+}

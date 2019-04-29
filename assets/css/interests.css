@@ -1,0 +1,44 @@
+body {
+    overflow-y: auto; 
+    background-attachment: fixed;
+}
+
+body::after {
+    position: fixed;
+    content: "";
+    background: url("../image/background.jpeg");
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: -1;  
+    background-color: white; 
+}
+
+#interest-container {
+    position: relative;
+    top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.interest-title {
+    font-size: 24px;
+}
+
+.interest {
+    margin-bottom: 100px;
+}
+
+.image-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    height: 300px;
+    margin: 20px;
+}
