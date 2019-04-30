@@ -1,21 +1,21 @@
 $(document).ready(function() {
-    const distanceToNextImage = -450;
-    var currentImageNumber = 0;
+    const distanceToNext = -450;
+    var current = 0;
     
     $("#lightbox").hide()
 
     $("#right").click(function() {
-        if (currentImageNumber < 7) {
-            currentImageNumber++;
+        if (current < 7) {
+            current++;
         }
-        $("#carousel-strip").css("left", (distanceToNextImage*currentImageNumber).toString() + "px")
+        $("#carousel-strip").css("left", (distanceToNext*current).toString() + "px")
     })
 
     $("#left").click(function() {
-        if (currentImageNumber > 0) {
-            currentImageNumber--;
+        if (current > 0) {
+            current--;
         }
-        $("#carousel-strip").css("left", (distanceToNextImage*currentImageNumber).toString() + "px")
+        $("#carousel-strip").css("left", (distanceToNext*current).toString() + "px")
     })
 
     $("#close, #overlay").click(function() {
@@ -23,8 +23,8 @@ $(document).ready(function() {
     })
 
     $(".image").click(function() {
-        currentImageNumber = parseInt(this.id)
-        $("#carousel-strip").css("left", (distanceToNextImage*currentImageNumber).toString() + "px")
+        current = parseInt(this.id)
+        $("#carousel-strip").css("left", (distanceToNext*current).toString() + "px")
         $("#lightbox").show()
     })
 })

@@ -1,6 +1,7 @@
 body {
     overflow-y: auto; 
     background-attachment: fixed;
+    opacity: 1;
 }
 
 body::after {
