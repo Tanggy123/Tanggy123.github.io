@@ -26,3 +26,23 @@ body {
     transform: translateY(-50px);
     cursor: default;
 }
+
+#pc {
+    position: absolute;
+    bottom: 1vh;
+    left: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#pc-link {
+    text-decoration: none;
+    color: white;
+    transition-duration: 1s;
+}
+
+#pc-link:hover {
+    color: rgb(137, 194, 240);
+    font-size: 25px;
+    transition-duration: 1s;
+}
