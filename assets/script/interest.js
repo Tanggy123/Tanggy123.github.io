@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("#lightbox").hide()
 
     $("#right").click(function() {
-        if (current < 7) {
+        if (current < 2) {
             current++;
         }
         $("#carousel-strip").css("left", (distanceToNext*current).toString() + "px")
